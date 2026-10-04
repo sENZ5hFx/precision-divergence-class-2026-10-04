@@ -1,0 +1,539 @@
+{
+  "ranking": {
+    "class": "Precision-Divergence Class (PDC)",
+    "session": "2026-10-04T17:40:00Z",
+    "formula": "40 * precision_gain * residual_growth * evidence * (1-spoken) * (1-prior_overlap)",
+    "kill_rule": "Residual shrinks under later precision, or a coupling paper halves it.",
+    "archive_subtracted": [
+      "Dark Biosphere",
+      "TAC",
+      "Cadence Mismatch",
+      "NCR",
+      "FAC",
+      "CIC",
+      "JAC",
+      "IOA",
+      "DIC",
+      "PPC",
+      "UCC",
+      "DCC",
+      "FCC",
+      "OAC",
+      "UPRC",
+      "CIP",
+      "TPC",
+      "CMC",
+      "EFC",
+      "IPC",
+      "SBC",
+      "IRC",
+      "SEC",
+      "RJC",
+      "ANC",
+      "UEDP",
+      "RD Plane-Split",
+      "CHL",
+      "CLOSED-2026-09-30"
+    ],
+    "n_cases": 13,
+    "n_keep": 9,
+    "ranking": [
+      {
+        "id": "hubble_h0dn",
+        "realm": "outer space",
+        "quantity": "H0 km/s/Mpc",
+        "estimators": [
+          "Planck/ACT+\u039bCDM ~67.4",
+          "CCHP/TRGB ~70",
+          "H0DN 73.50\u00b10.81"
+        ],
+        "score": 19.9175,
+        "ruling": "keep",
+        "role": "primary",
+        "status": "confirmed",
+        "factors": {
+          "precision_gain": 0.95,
+          "residual_growth": 0.94,
+          "evidence": 1.0,
+          "spoken": 0.18,
+          "prior_overlap": 0.32,
+          "unspoken": 0.82,
+          "novelty_vs_archive": 0.68
+        },
+        "source": "H0DN Collaboration, A&A 2026, H0=73.50\u00b10.81; Newswise 2026-10-01 recap; JWST Cepheid confirmation",
+        "notes": "H0DN replaced a single ladder with a distance network at ~1% and still sits 5\u20137\u03c3 from CMB+BAO. Precision spent; residual grew; single-error explanations retired."
+      },
+      {
+        "id": "mesopelagic_biomass",
+        "realm": "ocean",
+        "quantity": "global mesopelagic fish biomass (Gt)",
+        "estimators": [
+          "trawl ~1 Gt",
+          "acoustic 7\u201310 Gt",
+          "combined 1\u201320 Gt"
+        ],
+        "score": 13.395,
+        "ruling": "keep",
+        "role": "co-primary",
+        "status": "confirmed",
+        "factors": {
+          "precision_gain": 0.78,
+          "residual_growth": 0.88,
+          "evidence": 0.88,
+          "spoken": 0.16,
+          "prior_overlap": 0.34,
+          "unspoken": 0.84,
+          "novelty_vs_archive": 0.66
+        },
+        "source": "SUMMER 2026; Proud 2019; Arostegui GCB 2026; DOSI policy brief Oct 2025",
+        "notes": "More methods widened the range to 20\u00d7. Gas-bladdered siphonophores remain the largest acoustic-ID unknown. Arostegui: 'unexploited frontier' is already fished."
+      },
+      {
+        "id": "ccz_virome_novelty",
+        "realm": "ocean",
+        "quantity": "fraction of viruses previously documented",
+        "estimators": [
+          "legacy viral databases",
+          "CCZ sediment virome 2023\u201324"
+        ],
+        "score": 11.9154,
+        "ruling": "keep",
+        "role": "runner",
+        "status": "confirmed",
+        "factors": {
+          "precision_gain": 0.82,
+          "residual_growth": 0.74,
+          "evidence": 0.92,
+          "spoken": 0.08,
+          "prior_overlap": 0.42,
+          "unspoken": 0.92,
+          "novelty_vs_archive": 0.58
+        },
+        "source": "Hou, Zhang, Sung, Nature Communications, reported 2026-10-02/03; 99% undocumented",
+        "notes": "Sequencing precision went up; novelty rate stayed ~99%. Baseline-that-cannot-baseline for pre-mining EIA. Overlap-penalized vs UPRC."
+      },
+      {
+        "id": "iit_gwt_adversarial",
+        "realm": "humans",
+        "quantity": "necessary and sufficient neural correlate of consciousness",
+        "estimators": [
+          "IIT",
+          "GWT",
+          "adversarial collaboration 2025"
+        ],
+        "score": 10.7156,
+        "ruling": "keep",
+        "role": "co-primary",
+        "status": "unsolved",
+        "factors": {
+          "precision_gain": 0.8,
+          "residual_growth": 0.78,
+          "evidence": 0.86,
+          "spoken": 0.22,
+          "prior_overlap": 0.36,
+          "unspoken": 0.78,
+          "novelty_vs_archive": 0.64
+        },
+        "source": "IIT vs GWT adversarial test, Apr 2025, no winner; SciAm Oct 2026 'what if consciousness isn't real'",
+        "notes": "The discriminator that was supposed to pick a theory licensed both. FAC owns the discriminator-failure; PDC owns that sharper tests enlarged the residual."
+      },
+      {
+        "id": "desi_dynamical_de",
+        "realm": "outer space",
+        "quantity": "dark-energy equation of state w(z)",
+        "estimators": [
+          "\u039bCDM w=-1",
+          "DESI BAO+CMB+SN quintom",
+          "systematics-only"
+        ],
+        "score": 9.398,
+        "ruling": "keep",
+        "role": "runner",
+        "status": "competing",
+        "factors": {
+          "precision_gain": 0.86,
+          "residual_growth": 0.72,
+          "evidence": 0.85,
+          "spoken": 0.28,
+          "prior_overlap": 0.38,
+          "unspoken": 0.72,
+          "novelty_vs_archive": 0.62
+        },
+        "source": "RAA 26:8 (2026) DESI-era review; dataset-combo dependence explicit",
+        "notes": "Preference for dynamical DE grows with BAO precision and flips with dataset combination. Partial PPC overlap."
+      },
+      {
+        "id": "llsvp_origin",
+        "realm": "earth interior",
+        "quantity": "origin of LLSVPs at CMB",
+        "estimators": [
+          "subducted-crust graveyard",
+          "primordial magma-ocean residue",
+          "Theia/core-exsolution mix"
+        ],
+        "score": 9.13,
+        "ruling": "keep",
+        "role": "co-primary",
+        "status": "competing",
+        "factors": {
+          "precision_gain": 0.68,
+          "residual_growth": 0.64,
+          "evidence": 0.82,
+          "spoken": 0.18,
+          "prior_overlap": 0.22,
+          "unspoken": 0.82,
+          "novelty_vs_archive": 0.78
+        },
+        "source": "Miyazaki et al. 2025; Lu et al. Science 2025-12-11 bridgmanite water; Nat. Comms. 2026-08-21 520-km split",
+        "notes": "Better tomography and mineral physics added a third origin (core-exsolution + magma ocean) without retiring the other two. Three-body."
+      },
+      {
+        "id": "soil_microbial_dark",
+        "realm": "land",
+        "quantity": "named fraction of soil/host-associated microbes",
+        "estimators": [
+          "culture 0.1\u20131%",
+          "metagenome OTU/ASV explosion",
+          "function-not-taxon"
+        ],
+        "score": 8.7091,
+        "ruling": "keep",
+        "role": "runner",
+        "status": "confirmed",
+        "factors": {
+          "precision_gain": 0.9,
+          "residual_growth": 0.8,
+          "evidence": 0.84,
+          "spoken": 0.4,
+          "prior_overlap": 0.4,
+          "unspoken": 0.6,
+          "novelty_vs_archive": 0.6
+        },
+        "source": "Biology Insights 2026-10-02; standard microbial-dark-matter bound",
+        "notes": "Sequencing precision increased the unnamed majority. Spoken as 'microbial dark matter'; unspoken as precision-divergence."
+      },
+      {
+        "id": "crustal_h2_sink",
+        "realm": "land",
+        "quantity": "microbial sink of crustal/natural hydrogen",
+        "estimators": [
+          "engineering model ~0",
+          "field pilots few%\u2013>50%",
+          "diffuse degassing unmeasured"
+        ],
+        "score": 6.7323,
+        "ruling": "keep",
+        "role": "runner",
+        "status": "unsolved",
+        "factors": {
+          "precision_gain": 0.7,
+          "residual_growth": 0.76,
+          "evidence": 0.78,
+          "spoken": 0.22,
+          "prior_overlap": 0.48,
+          "unspoken": 0.78,
+          "novelty_vs_archive": 0.52
+        },
+        "source": "Eos 2026-09-15 underground hydrogen; UPRC 2026-09-16 already logged the sink",
+        "notes": "Overlap with UPRC. Kept as land-realm instance of precision not closing a flux."
+      },
+      {
+        "id": "henneguya_energy",
+        "realm": "animals",
+        "quantity": "energy metabolism of an animal without mtDNA",
+        "estimators": [
+          "aerobic mitochondria (animal default)",
+          "host-derived ATP (unknown path)"
+        ],
+        "score": 6.3501,
+        "ruling": "keep",
+        "role": "runner",
+        "status": "unsolved",
+        "factors": {
+          "precision_gain": 0.55,
+          "residual_growth": 0.5,
+          "evidence": 0.8,
+          "spoken": 0.12,
+          "prior_overlap": 0.18,
+          "unspoken": 0.88,
+          "novelty_vs_archive": 0.82
+        },
+        "source": "Henneguya salminicola, first animal without mitochondrial genome (2020+); mechanism still unclear 2026",
+        "notes": "Not a precision-time-series. Weak PDC. Kept as animal-realm unspoken: the harpoon outlived the animal; the energy path did not get a third operator."
+      },
+      {
+        "id": "magnetoreception_hybrid",
+        "realm": "animals",
+        "quantity": "avian magnetic compass sensor",
+        "estimators": [
+          "cryptochrome radical pair",
+          "magnetite crystals",
+          "PNAS 2026 hybrid"
+        ],
+        "score": 3.7014,
+        "ruling": "control_or_retired",
+        "role": "retired",
+        "status": "retired",
+        "factors": {
+          "precision_gain": 0.84,
+          "residual_growth": 0.18,
+          "evidence": 0.9,
+          "spoken": 0.15,
+          "prior_overlap": 0.2,
+          "unspoken": 0.85,
+          "novelty_vs_archive": 0.8
+        },
+        "source": "Xu/Hore-class hybrid, PNAS 123(8) e2524093123, 19 Feb 2026. Receptor in a living bird still not shown.",
+        "notes": "Positive control. Two rivals were an unowned gain stage: magnetite as amplifier of radical pairs. Coupling retired PDC for this instance. Direct in-vivo receptor still missing \u2014 that remainder is not PDC."
+      },
+      {
+        "id": "dark_oxygen_sign",
+        "realm": "ocean",
+        "quantity": "benthic O2 flux sign at CCZ nodules",
+        "estimators": [
+          "Sweetman 2024 production",
+          "prior landers consumption",
+          "TMC/Frontiers artifact"
+        ],
+        "score": 1.3823,
+        "ruling": "overlap_penalty",
+        "role": "runner",
+        "status": "disputed",
+        "factors": {
+          "precision_gain": 0.58,
+          "residual_growth": 0.8,
+          "evidence": 0.7,
+          "spoken": 0.62,
+          "prior_overlap": 0.72,
+          "unspoken": 0.38,
+          "novelty_vs_archive": 0.28
+        },
+        "source": "Sweetman Nat. Geosci. 2024; Frontiers opinion 2025-12-19; DORI 2026 expeditions",
+        "notes": "Archive already spent TAC/UPRC on dark oxygen. Kept only as overlap-penalized runner. DORI is the test, not a confirmation."
+      },
+      {
+        "id": "lithium7_control",
+        "realm": "outer space",
+        "quantity": "primordial Li-7 abundance",
+        "estimators": [
+          "BBN 3\u20134\u00d7 higher",
+          "Spite-plateau observations"
+        ],
+        "score": 0.3264,
+        "ruling": "control_or_retired",
+        "role": "control",
+        "status": "control",
+        "factors": {
+          "precision_gain": 0.4,
+          "residual_growth": 0.12,
+          "evidence": 0.85,
+          "spoken": 0.75,
+          "prior_overlap": 0.2,
+          "unspoken": 0.25,
+          "novelty_vs_archive": 0.8
+        },
+        "source": "Open 40+ years; 4\u20135\u03c3; not a 2025\u201326 precision-enlarged residual",
+        "notes": "Must score near zero. A real, spoken, stable discrepancy is not PDC."
+      },
+      {
+        "id": "teleios_control",
+        "realm": "outer space",
+        "quantity": "nature of ASKAP radio sphere G305.4\u20132.2",
+        "estimators": [
+          "SNR",
+          "planetary nebula",
+          "unknown"
+        ],
+        "score": 0.2426,
+        "ruling": "control_or_retired",
+        "role": "control",
+        "status": "control",
+        "factors": {
+          "precision_gain": 0.12,
+          "residual_growth": 0.08,
+          "evidence": 0.7,
+          "spoken": 0.05,
+          "prior_overlap": 0.05,
+          "unspoken": 0.95,
+          "novelty_vs_archive": 0.95
+        },
+        "source": "Teleios / G305.4\u20132.2, ASKAP 2025. Too new for a precision derivative.",
+        "notes": "Must score near zero. No d(residual)/d(precision) yet."
+      }
+    ],
+    "primary": {
+      "id": "hubble_h0dn",
+      "realm": "outer space",
+      "quantity": "H0 km/s/Mpc",
+      "estimators": [
+        "Planck/ACT+\u039bCDM ~67.4",
+        "CCHP/TRGB ~70",
+        "H0DN 73.50\u00b10.81"
+      ],
+      "score": 19.9175,
+      "ruling": "keep",
+      "role": "primary",
+      "status": "confirmed",
+      "factors": {
+        "precision_gain": 0.95,
+        "residual_growth": 0.94,
+        "evidence": 1.0,
+        "spoken": 0.18,
+        "prior_overlap": 0.32,
+        "unspoken": 0.82,
+        "novelty_vs_archive": 0.68
+      },
+      "source": "H0DN Collaboration, A&A 2026, H0=73.50\u00b10.81; Newswise 2026-10-01 recap; JWST Cepheid confirmation",
+      "notes": "H0DN replaced a single ladder with a distance network at ~1% and still sits 5\u20137\u03c3 from CMB+BAO. Precision spent; residual grew; single-error explanations retired."
+    },
+    "controls_ok": true,
+    "retired_ok": true,
+    "forbidden": [
+      "Do not mint 150 per-realm discoveries (CHL + CLOSED-2026-09-30).",
+      "Do not claim H0DN resolved Hubble tension.",
+      "Do not claim dark oxygen is confirmed (DORI is the test).",
+      "Do not treat 'dark' namings as one substance.",
+      "Do not re-issue CIC, FAC, IRC, ANC, UEDP, UPRC.",
+      "Do not claim a patent or priority date."
+    ]
+  },
+  "iteration": {
+    "coupling_retirement": [
+      {
+        "id": "hubble_h0dn",
+        "hybrid_paper": null,
+        "residual_before": 0.7,
+        "residual_after": 0.9,
+        "ratio": 1.2857,
+        "retired": false,
+        "mode": "enlarged",
+        "kill_rule_fired": false
+      },
+      {
+        "id": "mesopelagic_biomass",
+        "hybrid_paper": "SUMMER combined eDNA+acoustics+nets 2026",
+        "residual_before": 0.7,
+        "residual_after": 0.85,
+        "ratio": 1.2143,
+        "retired": false,
+        "mode": "enlarged",
+        "kill_rule_fired": false
+      },
+      {
+        "id": "magnetoreception_hybrid",
+        "hybrid_paper": "PNAS 123(8) e2524093123 (2026-02-19)",
+        "residual_before": 0.8,
+        "residual_after": 0.18,
+        "ratio": 0.225,
+        "retired": true,
+        "mode": "retired_by_coupling",
+        "kill_rule_fired": true
+      },
+      {
+        "id": "iit_gwt_adversarial",
+        "hybrid_paper": null,
+        "residual_before": 0.6,
+        "residual_after": 0.78,
+        "ratio": 1.3,
+        "retired": false,
+        "mode": "enlarged",
+        "kill_rule_fired": false
+      },
+      {
+        "id": "llsvp_origin",
+        "hybrid_paper": "Miyazaki 2025 core-exsolution + magma-ocean mix (partial)",
+        "residual_before": 0.7,
+        "residual_after": 0.55,
+        "ratio": 0.7857,
+        "retired": false,
+        "mode": "midland_no_close",
+        "kill_rule_fired": false
+      },
+      {
+        "id": "dark_oxygen_sign",
+        "hybrid_paper": null,
+        "residual_before": 0.5,
+        "residual_after": 0.8,
+        "ratio": 1.6,
+        "retired": false,
+        "mode": "enlarged",
+        "kill_rule_fired": false
+      }
+    ],
+    "third_operator": [
+      {
+        "id": "hubble_h0dn",
+        "n": 3,
+        "labels_low_to_high": [
+          "Planck+\u039bCDM",
+          "CCHP/TRGB",
+          "H0DN"
+        ],
+        "values_low_to_high": [
+          67.4,
+          70.0,
+          73.5
+        ],
+        "span": 6.1,
+        "effect": "three_body_midland",
+        "pdc_persists": true,
+        "note": "A mid-landing third clock is not a resolution. It is Precision-Divergence in three-body form."
+      },
+      {
+        "id": "mesopelagic_biomass",
+        "n": 3,
+        "labels_low_to_high": [
+          "trawl",
+          "acoustic mid",
+          "upper combined"
+        ],
+        "values_low_to_high": [
+          1.0,
+          8.5,
+          20.0
+        ],
+        "span": 19.0,
+        "effect": "three_body_midland",
+        "pdc_persists": true,
+        "note": "A mid-landing third clock is not a resolution. It is Precision-Divergence in three-body form."
+      },
+      {
+        "id": "llsvp_origin",
+        "n": 3,
+        "labels_low_to_high": [
+          "recycled crust",
+          "core-exsolution mix",
+          "pure primordial"
+        ],
+        "values_low_to_high": [
+          0.0,
+          1.0,
+          2.0
+        ],
+        "span": 2.0,
+        "effect": "three_body_midland",
+        "pdc_persists": true,
+        "note": "A mid-landing third clock is not a resolution. It is Precision-Divergence in three-body form."
+      },
+      {
+        "id": "lithium7_control",
+        "n": 2,
+        "labels_low_to_high": [
+          "observed Spite",
+          "BBN predict"
+        ],
+        "values_low_to_high": [
+          1.0,
+          3.5
+        ],
+        "span": 2.5,
+        "effect": "two_body",
+        "pdc_persists": true,
+        "note": ""
+      }
+    ],
+    "surface_closed": true,
+    "new_gap_from_iteration": "Third-operator mid-landing does not retire PDC; it converts two-body tension into three-body tension. Hubble (67/70/73) is the type specimen. Only magnetoreception retired, via coupling not via a third clock.",
+    "ranking_primary_score": 19.9175
+  }
+}
